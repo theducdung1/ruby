@@ -12,4 +12,15 @@ else
 	b = b.to_i
 	c = c.to_i
 	d = b**2 - 4.*(a.*(c))
+	if (d > 0)
+		sqrtd = Math.sqrt(d)
+		x1 = (-b + sqrtd)/(2*a)
+		x2 = (-b - sqrtd)/(2*a)
+		puts "x1: #{x1} - x2: #{x2}"
+	elsif (d == 0)
+		x = -b/2*a
+		puts "x1 = x2 = #{x}"
+	else 
+		puts "Phuong trinh vo nghiem"
+	end
 end
